@@ -17,7 +17,7 @@
   color: white;
 }
 .header {
-  width: 100vw;
+  width: 100%;
   background-color: #2c3e50;
   color: white;
 }
@@ -89,16 +89,12 @@ ta-center {
   background-color: #1abc9c;
   color: white;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 #section-one h1 {
   font-weight: 800;
   font-size: 6rem;
-}
-
-#section-one .container {
-  height: 100%;
 }
 
 #section-one img {
@@ -129,6 +125,7 @@ ta-center {
 #section-two {
   text-align: center;
   margin-top: 50px;
+  width: 100%;
   padding: 50px 0;
 }
 #section-two img {
@@ -139,8 +136,9 @@ ta-center {
 
 .hover-plus:hover {
   opacity: 0.9;
-  background-color: darkolivegreen;
-  background-blend-mode: multiply;
+  z-index: 1;
+  background-color: green;
+  background-blend-mode: color;
 }
 
 .hover-plus:hover .fa-plus {
@@ -196,7 +194,7 @@ ta-center {
 #section-three {
   background-color: #1abc9c;
   color: white;
-  width: 100vw;
+  width: 100%;
   margin-top: 30px;
   text-align: center;
   padding-top: 100px;
@@ -220,10 +218,18 @@ ta-center {
   height: 70px;
   font-size: 2rem;
 }
+#section-three button:hover {
+  background-color: white;
+}
+
+#section-three button:hover i {
+  color: black;
+}
 
 #section-four {
   text-align: left;
   margin-top: 50px;
+  width: 100%;
 }
 
 #section-four h1 {
@@ -264,7 +270,7 @@ ta-center {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
-  width: 100vw;
+  width: 100%;
 }
 
 #footer div:nth-child(1),
@@ -277,7 +283,7 @@ ta-center {
   color: white;
   text-align: center;
   height: 70px;
-  width: 100vw;
+  width: 100%;
   line-height: 70px;
 }
 
@@ -314,4 +320,10 @@ ta-center {
 }
 #footer span:hover i {
   color: black;
+}
+
+@media screen and (max-width: 780px) {
+  #section-one h1 {
+    font-size: 3.5rem;
+  }
 }
