@@ -134,23 +134,59 @@ ta-center {
 #section-two img {
   width: 100%;
   margin: 20px 0;
-}
-
-/* TODO hover images  */
-
-#section-two div div img {
   border-radius: 20px;
 }
-.try:hover {
-  color: transparent;
-  cursor: pointer;
+
+.hover-plus:hover {
+  opacity: 0.9;
+  background-color: darkolivegreen;
+  background-blend-mode: multiply;
 }
 
-#section-two div div {
-  margin: auto;
+.hover-plus:hover .fa-plus {
+  display: block;
 }
 
-#section-two h1 {
+.hover-plus {
+  background-size: cover;
+  height: 270px;
+  background-position: center;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.hover-plus .fa-plus {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}
+
+.hover-plus.cabin {
+  background-image: url("../img/cabin.png");
+}
+.hover-plus.safe {
+  background-image: url("../img/safe.png");
+}
+.hover-plus.sub {
+  background-image: url("../img/submarine.png");
+}
+.hover-plus.game {
+  background-image: url("../img/game.png");
+}
+.hover-plus.circus {
+  background-image: url("../img/circus.png");
+}
+.hover-plus.cake {
+  background-image: url("../img/cake.png");
+}
+
+*/ #section-two h1 {
   color: #2c3e50;
   font-size: 4rem;
   font-weight: 800;
