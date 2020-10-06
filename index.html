@@ -6,6 +6,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <!-- Latest compiled and minified CSS -->
     <link
@@ -20,16 +26,24 @@
   </head>
 
   <body>
-    <div class="header">
+    <div class="header pos-fixed">
       <div class="container">
         <div class="row header-row relative">
           <div class="col-xs-9 col-md-4 h100">
             <h3 class="absolute-top m-zero">START BOOTSTRAP</h3>
           </div>
           <div class="col-xs-2 visible-xs-block visible-sm-block h100">
-            <div class="menu">Menu</div>
+            <button type="button" class="btn btn-success menu">
+              Menu
+              <span
+                class="glyphicon glyphicon-menu-hamburger"
+                aria-hidden="true"
+              ></span>
+            </button>
           </div>
-          <div class="col-md-8 visible-lg-block visible-md-block">
+          <div
+            class="col-md-8 visible-lg-block visible-md-block h100 text-right"
+          >
             <ul class="">
               <li>PORTFOLIO</li>
               <li>ABOUT</li>
@@ -39,16 +53,19 @@
         </div>
       </div>
     </div>
-    <div id="section-one">
+    <div id="section-one" class="jumbotron">
       <div class="container">
-        <div class="row section-one">
+        <div class="row">
           <div class="col-xs-12">
             <div>
               <img class="" src="img/avataaars.svg" alt="avatar" />
-              <h1>
-                START <br />
-                BOOTSTRAP
-              </h1>
+              <h1>START BOOTSTRAP</h1>
+            </div>
+            <div class="col-xs-12">
+              <span class="straight-line white"></span>
+              <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+              <span class="straight-line white"></span>
+              <p>Graphic Artist - Web Designer - Illustrator</p>
             </div>
           </div>
         </div>
@@ -59,6 +76,11 @@
       <div class="row">
         <div class="col-xs-12">
           <h1>PORTFOLIO</h1>
+        </div>
+        <div class="col-xs-12">
+          <span class="straight-line blue"></span>
+          <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+          <span class="straight-line blue"></span>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4">
           <div>
@@ -97,85 +119,83 @@
       <div class="container">
         <div class="col-xs-12 col-md-6 col-md-offset-3">
           <h1>ABOUT</h1>
-          <div class="hidden-md hidden-lg">
+          <div class="col-xs-12 margin-bottom-10">
+            <span class="straight-line white"></span>
+            <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+            <span class="straight-line white"></span>
+          </div>
+        </div>
+        <div class="hidden-md hidden-lg col-xs-12">
+          <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The
+            download includes the complete source files including HTML, CSS, and
+            JavaScript as well as optional SASS stylesheets for easy
+            customization. You can create your own custom avatar for the
+            masthead, change the icon in the dividers, and add your email
+            address to the contact form to make it fully functional!
+          </p>
+        </div>
+        <div class="row visible-md-block visible-lg-block">
+          <div
+            class="col-md-4 col-md-offset-2 visible-md-block visible-lg-block"
+          >
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              illo rerum, tempore ut, architecto non tempora maiores obcaecati
-              beatae possimus consequuntur dolorum culpa officia, nobis unde
-              aspernatur sit est expedita. Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Dolorem aut laborum veniam vitae
-              fuga adipisci dolor natus, ullam ipsa, at sequi id molestias
-              dolore necessitatibus quidem impedit recusandae voluptatem
-              tenetur.
+              Freelancer is a free bootstrap theme created by Start Bootstrap.
+              The download includes the complete source files including HTML,
+              CSS, and JavaScript as well as optional SASS stylesheets for easy
+              customization.
             </p>
           </div>
-          <div class="row visible-md-block visible-lg-block">
-            <div class="col-md-6 visible-md-block visible-lg-block">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-              soluta quo enim mollitia cum odio, a, eum laudantium excepturi
-              nisi dolore adipisci fugiat deleniti! Ameadipisicing elit.
-              Perspiciatis eaque atque explicabo cum similique repudiandae
-              laboriosam asperiores, commodi suscipit! Repudiandae vero eaque
-              necessitatibus nihil sit modi hic neque similique voluptatet fugit
-              porro exercitationem minus esse.
-            </div>
-            <div class="col-md-6 visible-md-block visible-lg-block">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis eaque atque explicabo cum similique repudiandae
-              laboriosam asperiores, commodi suscipit! Repudiandae vero eaque
-              necessitatibus nihil sit modi hic neque similique
-              voluptateadipisicing elit. Perspiciatis eaque atque explicabo cum
-              similique repudiandae laboriosam asperiores, commodi suscipit!
-              Repudiandae vero eaque necessitatibus nihil sit modi hic neque
-              similique voluptate.
-            </div>
+          <div class="col-md-4 visible-md-block visible-lg-block">
+            <p>
+              You can create your own custom avatar for the masthead, change the
+              icon in the dividers, and add your email address to the contact
+              form to make it fully functional!
+            </p>
           </div>
+        </div>
+        <div class="col-xs-12 text-center">
+          <button type="button" class="btn btn-success">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            Free Download!
+          </button>
         </div>
       </div>
     </div>
 
     <div id="section-four" class="container relative">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
           <h1>CONTACT ME</h1>
+          <div class="col-xs-12">
+            <span class="straight-line blue"></span>
+            <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+            <span class="straight-line blue"></span>
+          </div>
         </div>
-        <div class="col-xs-12">
+
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
           <form>
             <div class="form-group">
               <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Your name"
-              />
+              <input type="text" class="form-control" id="name" />
             </div>
             <div class="form-group">
               <label for="email-address">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email-address"
-                placeholder="Email"
-              />
+              <input type="email" class="form-control" id="email-address" />
             </div>
             <div class="form-group">
               <label for="Phone">Telefono</label>
-              <input type="text" class="form-control" id="Phone" value="+39" />
+              <input type="text" class="form-control" id="Phone" />
             </div>
 
             <div class="form-group">
               <label for="messaggio">Messaggio</label>
-              <textarea
-                class="form-control"
-                id="messaggio"
-                rows="5"
-                placeholder="Suggerimenti..."
-              ></textarea>
+              <textarea class="form-control" id="messaggio" rows="5"></textarea>
             </div>
 
             <button id="bottone" type="submit" class="btn btn-default">
-              SEND
+              Send
             </button>
           </form>
         </div>
@@ -185,26 +205,36 @@
     <div id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <h1>Location</h1>
-            <div>
+          <div class="col-xs-12 col-sm-4">
+            <h3>LOCATION</h3>
+            <p>
               2215 John Daniel Drive <br />
               Clark, MO 65243
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h3>AROUND THE WEB</h3>
+            <div>
+              <span
+                ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+              ></span>
+              <span
+                ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+              ></span>
+              <span
+                ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+              ></span>
+              <span
+                ><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i
+              ></span>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4">
-            <h1>Location</h1>
-            <div>
-              2215 John Daniel Drive <br />
-              Clark, MO 65243
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <h1>Location</h1>
-            <div>
-              2215 John Daniel Drive <br />
-              Clark, MO 65243
-            </div>
+          <div class="col-xs-12 col-sm-4">
+            <h3>ABOUT FREELANCER</h3>
+            <p>
+              Freelance is a free to use, MIT licensed Bootstrap theme created
+              by <a href="">Start Bootstrap.</a>
+            </p>
           </div>
         </div>
       </div>
